@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>youtube clone</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <ul>
+          <li>Logo</li>
+        </ul>
+        <ul>
+          <li>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </li>
+          <!-- <li>Search</li> -->
+        </ul>
+        <ul class="right-container">
+          <li><i class="fa fa-video-camera"></i></li>
+          <li><i class="fa fa-th-large"></i></li>
+          <li><i class="fa fa-bell"></i></li>
+          <li>
+            <img
+              src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+              alt="profile-img"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end of header -->
+
+    <!-- section -->
+    <section>
+      <!-- sidebar -->
+      <div
+        class="sidebar"
+        id="sidebar"
+        onmouseenter="opeen()"
+        onmouseleave="cloce()"
+      >
+        <!-- <a
+          href="javascript:void(0)"
+          class="ham"
+          id="ham"
+          onmouseenter="opeen()"
+          onmouseleave="cloce()"
+          >ham</a
+        > -->
+        <div class="side-contents">
+          <ul>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-navicon"></i> &ensp;
+              <i class="fa fa-youtube-play"></i> &ensp; Youtube
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-home"></i> &ensp; Home
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-bandcamp"></i> &ensp; Explore
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-music"></i> &ensp; Short Video
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-users"></i> &ensp; Channel
+            </li>
+            <hr />
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-video-camera"></i> &ensp; Library
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-history"></i> &ensp; History
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-thumbs-up"></i> &ensp; like
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-angle-down"></i> &ensp; show more
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-comment"></i> &ensp; messages
+            </li>
+            <br />
+            <hr />
+            <h3>SUBSCRIPTIONS</h3>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; coder d coder
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; react master
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; frontend design
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; backend coders
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-angle-down"></i> &ensp; show 3 more
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; mukbang show
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; abcd coders
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; doremmon show
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end of sidebar -->
+
+      <!-- container -->
+      <div class="container" id="container">
+        <div class="main-container" id="main-container">
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back5.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back1.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back3.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back4.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back6.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back5.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back1.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back3.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back4.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back6.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back5.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back1.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back3.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back4.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back6.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back5.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back1.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back3.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back4.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-top">
+                <a href="./details.html">
+                  <img src="./img/back6.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="card-down">
+                <div class="img-profile-circle">
+                  <img
+                    src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+                    alt="profile-img"
+                  />
+                </div>
+
+                <a href="./details.html">
+                  <div class="description">
+                    <div class="heading">
+                      <h4>
+                        How to make Hotel booking website with html css ...
+                      </h4>
+                    </div>
+                    <div class="short-line">
+                      <p>1 week ago</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

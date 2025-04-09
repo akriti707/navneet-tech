@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+}
+.background {
+  height: 100vh;
+  width: initial;
+  background: #414141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table {
+  width: 60%;
+  padding: 25px 15px;
+  background-color: white;
+  box-shadow: 1px 1px 14px 25px #9595954d;
+}
+table {
+  width: -webkit-fill-available;
+  border: 1px solid #dfdfdf;
+  background: white;
+  /* border-radius: 8px;*/
+}
+th,
+td {
+  text-align: center;
+  padding: 15px 0px;
+  border: 0.8px solid;
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .table {
+    width: 80%;
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>youtube clone</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <ul>
+          <li>Logo</li>
+        </ul>
+        <ul>
+          <li>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </li>
+          <!-- <li>Search</li> -->
+        </ul>
+        <ul class="right-container">
+          <li><i class="fa fa-video-camera"></i></li>
+          <li><i class="fa fa-th-large"></i></li>
+          <li><i class="fa fa-bell"></i></li>
+          <li>
+            <img
+              src="./img/external-boy-people-victoruler-flat-victoruler-5.png"
+              alt="profile-img"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end of header -->
+
+    <!-- section -->
+    <section>
+      <!-- sidebar -->
+      <div
+        class="sidebar"
+        id="sidebar"
+        onmouseenter="opeen()"
+        onmouseleave="cloce()"
+      >
+        <div class="side-contents">
+          <ul>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-navicon"></i> &ensp;
+              <i class="fa fa-youtube-play"></i> &ensp; Youtube
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-home"></i> &ensp; Home
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-bandcamp"></i> &ensp; Explore
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-music"></i> &ensp; Short Video
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-users"></i> &ensp; Channel
+            </li>
+            <hr />
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-video-camera"></i> &ensp; Library
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-history"></i> &ensp; History
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-thumbs-up"></i> &ensp; like
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-angle-down"></i> &ensp; show more
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-comment"></i> &ensp; messages
+            </li>
+            <br />
+            <hr />
+            <h3>SUBSCRIPTIONS</h3>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; coder d coder
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; react master
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; frontend design
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; backend coders
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-angle-down"></i> &ensp; show 3 more
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; mukbang show
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; abcd coders
+            </li>
+            <li class="nav-li" onclick="clickactive()">
+              <i class="fa fa-user-circle"></i> &ensp; doremmon show
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end of sidebar -->
+
+      <!-- container -->
+      <div class="container" id="container">
+        <div class="main-container" id="main-container">
+          <!-- left big section -->
+          <div class="big-section">
+            <!-- top video part -->
+            <div class="video-section">
+              <video src="./img/video1.mp4"></video>
+            </div>
+            <!-- tags & heading part -->
+            <div class="tag-heading-section">
+              <div class="tag-heading-views">
+                <h4 class="blue-text">#web #webdesign #frontend</h4>
+                <h3>How to make Hotel Booking website with html Css ...</h3>
+                <h5 class="grey-text">693,348 view Premiered 53 minutes ago</h5>
+              </div>
+              <div class="icons-section">
+                <div class="icons">
+                  <i class="fa fa-thumbs-up">&ensp;225k</i>
+                  <i class="fa fa-thumbs-down">&ensp;Dislike</i>
+                  <i class="fa fa-share">&ensp;share</i>
+                  <i class="fa fa-scissors">&ensp;Clip</i>
+                  <i class="fa fa-bookmark">&ensp;Save</i>
+                  <i class="fa fa-ellipsis-h"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-section"></div>
+        </div>
+      </div>
+      <!-- end of container -->
+    </section>
+
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

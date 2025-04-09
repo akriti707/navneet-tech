@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.background {
+  background: #13171bd4;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 25px 20px;
+}
+
+.container {
+  width: 50%;
+  background: black;
+  text-align: -webkit-center;
+  box-sizing: border-box;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  border-radius: 15px;
+}
+@media (min-width: 1030px) {
+  .container {
+    width: 45%;
+  }
+}
+.box {
+  margin: auto;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.fa {
+  font-size: 35px;
+}
+
+i.fa.fa-google,
+i.fa.fa-apple {
+  font-size: initial;
+  color: black;
+}
+
+button {
+  padding: 10px 25px;
+  background: white;
+  border-radius: 22px;
+  display: block;
+  color: black;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  padding-bottom: 15px;
+}
+
+h4:before {
+  content: "";
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(57 57 57);
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  top: 45%;
+  justify-items: center;
+  left: 0px;
+}
+
+h4:after {
+  content: "";
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(57 57 57);
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  top: 45%;
+  justify-items: center;
+  right: 0px;
+}
+
+input.input-username {
+  padding: 15px 20px 15px 12px;
+  background: transparent;
+  border: 0.8px solid #393939;
+  margin: 10px 0;
+  width: -webkit-fill-available;
+}
+button.forgot-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #393939;
+}
+a {
+  color: #1d9bf0;
+}
+p {
+  text-align: left;
+}
